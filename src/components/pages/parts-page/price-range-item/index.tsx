@@ -21,10 +21,11 @@ const PriceRange = () => {
       width: 'fit-content'
     }}>
       {/* <h3>hello</h3> */}
-      <input id="range-slider" style={{"direction":"rtl","fontWeight":"bold"}}>
+      {/* <input id="range-slider" style={{"direction":"rtl","fontWeight":"bold"}}>
         
-      </input>
-      טווח מחירים (ILS)
+      </input> */}
+      <h5 style={{"direction":"rtl"}}> טווח מחירים (ILS)</h5>
+     
       <br />
       <Slider
         value={value}
