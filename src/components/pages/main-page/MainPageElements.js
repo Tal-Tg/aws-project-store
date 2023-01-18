@@ -65,14 +65,15 @@ animation-name: slideinReverse;
 `
 
 export const MenuIcon = styled.div`
-color:white;
+color:black;
 // width:80%;
 height:5%;
 font-size:30px;
 position:fixed;
 top:12px;
 left:50%;
-display:none;
+// display:none;
+
 // @media only screen and (max-width: 1025px) {
 //     display:none;
 // }
@@ -204,7 +205,7 @@ overflow-y: hidden;
 export const MenuGridItem = styled.div`
 width:100%;
 height:100%;
-background:yellow;
+background:white;
 display:flex;
 
 `

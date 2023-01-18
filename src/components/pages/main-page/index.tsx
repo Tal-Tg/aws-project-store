@@ -78,9 +78,12 @@ function MainPage(){
                             MEN
                         </TabMenuItem>
                     </TabMenu>
+                    <br />
+                        <br />
+                        <br />
                     <MenuItemsWrapperGrid>
                     <MenuGridItem>
-
+                        <h2>Menu coming Soon</h2>
                     </MenuGridItem>
                     <MenuGridItem>
 
