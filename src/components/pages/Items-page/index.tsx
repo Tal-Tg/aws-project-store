@@ -13,14 +13,21 @@ import PriceRange from "../parts-page/price-range-item";
 
 
 
-const ItemGrid = () => {
+
+interface RouteParam{
+    title: string;
+}
+
+
+const ItemGrid: React.FC = (): JSX.Element => {
 
     const param = useParams();
     const [categoryClick , setCategoryClick] = useState(false);
     const [categoryTiShirt , setCategoryTiShirt] = useState(false);
     const [category2 , setCategory2] = useState(false);
-
     const [firstTimeHereNow , setFirstTimeHereNow] = useState(true);
+
+
 
     useEffect(() => {
         if(firstTimeHereNow){
@@ -43,19 +50,19 @@ const ItemGrid = () => {
     
 
     function clickTest(str : string){
-        if(str == "1"){
+        if(str === "1"){
             setCategoryClick(!categoryClick)
             setCategoryTiShirt(false)
             setCategory2(false)
-        }else if(str == "1:1"){
+        }else if(str === "1:1"){
             setCategoryTiShirt(!categoryTiShirt)
-        }else if(str == "1:2"){
+        }else if(str === "1:2"){
             setCategory2(!category2)
-        }else if(str == "2"){
+        }else if(str === "2"){
             setSizeClick(!sizeClick)
-        }else if(str == "3"){
+        }else if(str === "3"){
             setColorClick(!colorClick)
-        }else if(str == "4"){
+        }else if(str === "4"){
             setMaterialClick(!materialClick)
             setMaterialShowMoreClick(false);
         }
@@ -64,14 +71,14 @@ const ItemGrid = () => {
 
     function toggle(source:any) {
         if(categoryTiShirt && source == "טופים, חולצות, וחולצות טי"){
-            document.getElementById("טופים")?.click();
-            document.getElementById("חולצות")?.click();
-            document.getElementById("חולצות טי")?.click();
+            document.getElementById("טופים").click();
+            document.getElementById("חולצות").click();
+            document.getElementById("חולצות טי").click();
         }else if(category2 && source == "סווטשירט לנשים"){
-            document.getElementById("חצאיות לנשים")?.click();
-            document.getElementById("מכנסיים לנשים")?.click();
-            document.getElementById("טייצים לנשים")?.click();
-            document.getElementById("שוטסרט לנשים")?.click();
+            document.getElementById("חצאיות לנשים").click();
+            document.getElementById("מכנסיים לנשים").click();
+            document.getElementById("טייצים לנשים").click();
+            document.getElementById("שוטסרט לנשים").click();
         }
     }
 
@@ -104,7 +111,7 @@ const ItemGrid = () => {
 
                     <ItemsGridContainer>
                         <div>
-                        <ActionAreaCard imgSrc="https://img.ltwebstatic.com/images3_pi/2022/11/17/1668646905113905790f8317101d5540e9450d5774_thumbnail_405x552.webp"/>
+                            <ActionAreaCard imgSrc="https://img.ltwebstatic.com/images3_pi/2022/11/17/1668646905113905790f8317101d5540e9450d5774_thumbnail_405x552.webp"/>
                             
                         </div>
                         <div>
@@ -204,13 +211,13 @@ const ItemGrid = () => {
                             </ItemMenuStyleOpen>
                             <ItemMenuListOpenItemDiv>
                                 <ItemMenuListOpenItemDivInput>
-                                    <input type="checkbox" id="שמלות" name="שמלות" />
+                                    <input type="checkbox" id="שמלות" name="שמלות"></input>
                                     <ItemMenuListOpenItemDivText htmlFor="שמלות"> שמלות</ItemMenuListOpenItemDivText>
                                 </ItemMenuListOpenItemDivInput>
                             </ItemMenuListOpenItemDiv>
                             <ItemMenuListOpenItemDiv>
                                 <ItemMenuListOpenItemDivInput>
-                                    <input type="checkbox" id="טופים,חולצות,וחולצות טי" name="טופים,חולצות,וחולצות טי" />
+                                    <input type="checkbox" id="טופים,חולצות,וחולצות טי" name="טופים,חולצות,וחולצות טי" ></input>
                                     <ItemMenuListOpenItemDivText htmlFor="טופים,חולצות,וחולצות טי" onClick={()=> toggle("טופים, חולצות, וחולצות טי")}>טופים, חולצות, וחולצות טי</ItemMenuListOpenItemDivText>
                                 </ItemMenuListOpenItemDivInput>
                                 <ItemMenuListOpenItemDivIcon>
@@ -220,15 +227,15 @@ const ItemGrid = () => {
                                 <div style={{"background":"white","height":"100px"}}>
                                     <SubItemOpenDiv3Items>
                                         <ItemMenuListOpenItemDivInput>
-                                            <input type="checkbox" id="טופים" name="טופים"  />
+                                            <input type="checkbox" id="טופים" name="טופים"  ></input>
                                             <ItemMenuListOpenItemDivText htmlFor="טופים" id="טופים"> טופים</ItemMenuListOpenItemDivText>
                                         </ItemMenuListOpenItemDivInput>
                                         <ItemMenuListOpenItemDivInput>
-                                            <input type="checkbox" id="חולצות"  name="חולצות" />
+                                            <input type="checkbox" id="חולצות"  name="חולצות" ></input>
                                             <ItemMenuListOpenItemDivText htmlFor="חולצות" id="חולצות"> חולצות</ItemMenuListOpenItemDivText>
                                         </ItemMenuListOpenItemDivInput>
                                         <ItemMenuListOpenItemDivInput>
-                                            <input type="checkbox" id="חולצות טי" name="חולצות טי" />
+                                            <input type="checkbox" id="חולצות טי" name="חולצות טי" ></input>
                                             <ItemMenuListOpenItemDivText htmlFor="חולצות טי" id="חולצות טי"> חולצות טי</ItemMenuListOpenItemDivText>
                                         </ItemMenuListOpenItemDivInput>
                                     </SubItemOpenDiv3Items>
@@ -238,13 +245,13 @@ const ItemGrid = () => {
 
                             <ItemMenuListOpenItemDiv>
                                 <ItemMenuListOpenItemDivInput>
-                                    <input type="checkbox" id="vehicle3" name="vehicle1" value="Bike" style={{"borderRadius":"50%"}}/>
+                                    <input type="checkbox" id="vehicle3" name="vehicle1" ></input>
                                     <ItemMenuListOpenItemDivText htmlFor="vehicle3"> חלק תחתון לנשים</ItemMenuListOpenItemDivText>
                                 </ItemMenuListOpenItemDivInput>
                             </ItemMenuListOpenItemDiv>
                             <ItemMenuListOpenItemDiv>
                                 <ItemMenuListOpenItemDivInput>
-                                    <input type="checkbox" id="vehicle4" name="vehicle4" value="Bike" style={{"borderRadius":"50%"}}/>
+                                    <input type="checkbox" id="vehicle4" name="vehicle4"  ></input>
                                     <ItemMenuListOpenItemDivText htmlFor="vehicle4" onClick={()=> toggle("סווטשירט לנשים")}> סווטשירט לנשים</ItemMenuListOpenItemDivText>
                                 </ItemMenuListOpenItemDivInput>
                                 <ItemMenuListOpenItemDivIcon>
@@ -255,19 +262,19 @@ const ItemGrid = () => {
                                 <div style={{"background":"white","height":"auto"}}>
                                     <SubItemOpenDiv4Items>
                                         <ItemMenuListOpenItemDivInput>
-                                            <input type="checkbox" id="חצאיות לנשים" name="חצאיות לנשים"  />
+                                            <input type="checkbox" id="חצאיות לנשים" name="חצאיות לנשים" ></input>
                                             <ItemMenuListOpenItemDivText htmlFor="חצאיות לנשים" id="חצאיות לנשים"> חצאיות לנשים</ItemMenuListOpenItemDivText>
                                         </ItemMenuListOpenItemDivInput>
                                         <ItemMenuListOpenItemDivInput>
-                                            <input type="checkbox" id="מכנסיים לנשים"  name="מכנסיים לנשים" />
+                                            <input type="checkbox" id="מכנסיים לנשים"  name="מכנסיים לנשים" ></input>
                                             <ItemMenuListOpenItemDivText htmlFor="מכנסיים לנשים" id="מכנסיים לנשים"> מכנסיים לנשים</ItemMenuListOpenItemDivText>
                                         </ItemMenuListOpenItemDivInput>
                                         <ItemMenuListOpenItemDivInput>
-                                            <input type="checkbox" id="טייצים לנשים" name="טייצים לנשים" />
+                                            <input type="checkbox" id="טייצים לנשים" name="טייצים לנשים" ></input>
                                             <ItemMenuListOpenItemDivText htmlFor="טייצים לנשים" id="טייצים לנשים"> טייטצים לנשים</ItemMenuListOpenItemDivText>
                                         </ItemMenuListOpenItemDivInput>
                                         <ItemMenuListOpenItemDivInput>
-                                            <input type="checkbox" id="שוטסרט לנשים" name="שוטסרט לנשים" />
+                                            <input type="checkbox" id="שוטסרט לנשים" name="שוטסרט לנשים" ></input>
                                             <ItemMenuListOpenItemDivText htmlFor="שוטסרט לנשים" id="שוטסרט לנשים">שוטסרט לנשים</ItemMenuListOpenItemDivText>
                                         </ItemMenuListOpenItemDivInput>
                                     </SubItemOpenDiv4Items>
