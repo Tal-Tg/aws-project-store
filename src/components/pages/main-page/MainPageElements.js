@@ -72,7 +72,7 @@ font-size:30px;
 position:fixed;
 top:12px;
 left:50%;
-// display:none;
+display:none;
 
 // @media only screen and (max-width: 1025px) {
 //     display:none;
@@ -205,7 +205,7 @@ overflow-y: hidden;
 export const MenuGridItem = styled.div`
 width:100%;
 height:100%;
-background:white;
+background:yellow;
 display:flex;
 
 `

@@ -9,7 +9,6 @@ import {MenuWrapper,MenuIcon,MenuExitIcon,MenuWrapperReverse,TabMenu,TabMenuItem
     MenuGridItem} from './MainPageElements'
 
 
-
 var lla = false;
 
 export function setTest(test:any) {
