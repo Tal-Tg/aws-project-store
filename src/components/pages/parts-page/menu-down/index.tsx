@@ -20,6 +20,7 @@ import {RiHistoryFill} from 'react-icons/ri';
 import {BsFillCartCheckFill} from 'react-icons/bs';
 import {CartContainerDiv ,CartFirstSection,CartSecondSection,DivForTextSecondSection,DivForDisplayNone} from './MenuDownelements'
 import { useNavigate } from "react-router";
+import store from '../../../../Redux/store';
 
 
 const AccountMenu  = (Icon:any) =>{  

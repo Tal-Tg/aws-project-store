@@ -88,15 +88,19 @@ position:relative;
 
 export const IconsDivPart3Wrapper = styled.div`
 display: grid;
-grid-template-columns: 25% 17% 0% auto;
+grid-template-columns: 5% 2% 1% 15%;
 grid-gap: 20px;
-width:30%;
-height:100%;
+width:100%;
+height:115%;
+justify-content:right;
 position:relative;
-top:-10px;
+top:-15px;
+background:white;
 
 
-
+@media only screen and (max-width: 1230px) {
+    grid-template-columns: 8% 3% 2% 25%;
+}
 
 @media only screen and (max-width: 779px) {
     display:none;

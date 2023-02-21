@@ -26,7 +26,7 @@ export const DivForPrice = styled.div`
 // cursor: pointer;
 width: 100%;
 color: #222;
-overflow: hidden;
+// overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
 position:relative;
@@ -43,6 +43,12 @@ display: inline-block;
 //     color:black;
 // }
 
+
+
+
+@media screen and (max-width: 513px) {
+    font-size:12px;
+} 
 
 `
 

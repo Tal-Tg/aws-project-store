@@ -46,7 +46,7 @@ const  ActionAreaCard = ({imgSrc="",textItem="",price=""}) => {
             <ItemDivGrid>
               <ItemDivGridIconDiv>
                 <ItemDivGridIcon>
-                  { !testId ? <AiOutlineHeart onClick={() => SetClickTest()} fontSize="large"/> : <FcLike fontSize="large" onClick={() => SetClickTest()}/> }
+                  {/* { !testId ? <AiOutlineHeart onClick={() => SetClickTest()} fontSize="large"/> : <FcLike fontSize="large" onClick={() => SetClickTest()}/> } */}
                 </ItemDivGridIcon>
               </ItemDivGridIconDiv>
             </ItemDivGrid>

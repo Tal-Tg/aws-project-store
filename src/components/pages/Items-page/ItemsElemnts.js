@@ -181,7 +181,7 @@ width:100%;
 height:auto;
 background:white;
 align-items:center;
-justify-content:right;
+justify-content:center;
 text-align:center;
 display:flex;
 padding:20px;
@@ -208,11 +208,12 @@ grid-gap: 10px;
 }   
 
 @media screen and (max-width: 445px) {
-    grid-template-columns: 48% 48%;
+    
+    grid-template-columns: 55% 55%;
 }   
 
 @media screen and (max-width: 400px) {
-    grid-template-columns: 100%;
+    // grid-template-columns: 100%;
 }   
 
 // @media screen and (max-width: 1285px) {

@@ -51,7 +51,7 @@ function Header() {
                     {/* <HeaderLogoImage src={logo} /> */}
                 </LogoDivPart1>
                 <SearchDivPart2>
-                    <Search/>
+                    {/* <Search/> */}
                 </SearchDivPart2>
                 <IconsDivPart3>
                     <IconsDivPart3Wrapper>

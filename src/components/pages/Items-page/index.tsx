@@ -87,7 +87,8 @@ const ItemGrid: React.FC = (): JSX.Element => {
 
 
     function sendToSpecificItem(id:any){
-        navigate("/Item-page/"+param.title+"/staus%uservarification-Ytdjpawiew-dasfdsfds-gfdgdf@@!!2eoplkhgn/"+String(id))
+        // navigate("/Item-page/"+param.title+"/staus%uservarification-Ytdjpawiew-dasfdsfds-gfdgdf@@!!2eoplkhgn/"+String(id))
+        navigate("/Item-page/"+param.title+"/"+String(id))
         // if(id == 1){
         //     navigate("/Item-page/"+param.title+"/staus%uservarification-Ytdjpawiew-dasfdsfds-gfdgdf@@!!2eoplkhgn/")
         // }else if(id == 2){
@@ -133,8 +134,8 @@ const ItemGrid: React.FC = (): JSX.Element => {
             <DivForHeader></DivForHeader>
             <PageLinkContainer>
                 <PageLingWrapper>
-                <LinkItemDiv><Link style={{"textDecoration":"none","color":"#767676"}} to="/"> {param.title} </Link></LinkItemDiv>
-                    <SplitLineLinks>/</SplitLineLinks>
+                    <LinkItemDiv><Link style={{"textDecoration":"none","color":"#767676"}} to="/Item-page/Dresses"> {param.title} </Link></LinkItemDiv>
+                        <SplitLineLinks>/</SplitLineLinks>
                     <LinkItemDiv><Link style={{"textDecoration":"none","color":"#767676"}} to="/">Home-page</Link></LinkItemDiv>
                 </PageLingWrapper>
             </PageLinkContainer>

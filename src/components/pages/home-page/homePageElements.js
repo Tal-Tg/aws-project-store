@@ -36,6 +36,7 @@ width:90%;
 height:100%;
 background:white;
 
+
 @media screen and (max-width: 642px) {
     width:100%;
 
@@ -75,8 +76,8 @@ height:500px;
 background:black;
 
 
-@media screen and (max-width: 556px) {
-    height:300px;
+@media screen and (max-width: 600px) {
+    height:250px;
 }   
 
 @media screen and (max-width: 378px) {
@@ -106,41 +107,121 @@ height:100%;
 text-align:center;
 align-items:center;
 justify-content: center;
+display:flex;
 `
 
 export const GridWrapper = styled.div`
-width:100%;
+width:92%;
 height:100%;
 display: grid;
 background:white;
 grid-template-columns: 20% 20% 20% 20% 20%;
-grid-gap:0px;
+grid-gap:10px;
 text-align:center;
 align-items:center;
-// justify-content: center;
+justify-content: center;
+// left:1px;
+// position:relative;
 
 @media screen and (max-width: 642px) {
-    position:relative;
-    left:5px;
+    // position:relative;
+    // left:5px;
     
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }   
 
 
 @media screen and (max-width: 556px) {
     position:relative;
-    left:0px;
-    grid-template-columns: 50% 50%  ;
+    // left:4.4%;
+    grid-gap:6px;
+    grid-template-columns: 48% 48%  ;
 }   
+
+@media screen and (max-width: 356px) {
+    position:relative;
+    // left:4.4%;
+    grid-gap:6px;
+    width:99%;
+    grid-template-columns: 48% 48%  ;
+}   
+
 
 `
 
+export const ImageTestForGrid = styled.img`
+width:30px;
+height:30px;
+// background:white;
+position:relative;
+right:5px;
+
+`
+
+export const ImageTestForGridKnitwear = styled.img`
+width:30px;
+height:35px;
+// background:white;
+position:relative;
+right:5px;
+top:1px;
+`
+
+export const ImageTestForGridSweatshirts= styled.img`
+width:35px;
+height:35px;
+// background:white;
+position:relative;
+right:0px;
+top:1px;
+`
+
+export const ImageTestForGridSweatTwoPieces= styled.img`
+width:35px;
+height:35px;
+// background:white;
+position:relative;
+right:0px;
+top:1px;
+`
+
+export const ImageTestForGridSweatBottoms= styled.img`
+width:32px;
+height:35px;
+// background:black;
+position:relative;
+right:5px;
+top:1px;
+`
+
+export const ImageTestForGridSweatJewelry = styled.img`
+width:35px;
+height:35px;
+// background:black;
+position:relative;
+right:5px;
+top:1px;
+`
+
+export const ImageTestForGridSweatShoes = styled.img`
+width:37px;
+height:35px;
+// background:black;
+position:relative;
+right:5px;
+top:1px;
+`
+
+
+
 export const GridItems = styled.div`
-width:90%;
+width:100%;
 height:auto;
-min-height:100px;
+min-height:90px;
 position:relative;
 border-radius:3%;
-background:#e3e3e3;
+// background:#e3e3e3;
+background:#eeeeee;
 // border:1px solid black;
 text-align:center;
 align-items:center;
@@ -151,12 +232,19 @@ z-index:5;
 cursor:pointer;
 color:black;
 margin-top:10px;
+font-weight:bold;
 
+@media screen and (max-width: 786px) {
+    position:relative;
+    margin-top:10px;
+    width:100%;
+    font-size:14px;
+}   
 
 @media screen and (max-width: 556px) {
     position:relative;
     margin-top:10px;
-    width:99%;
+    width:100%;
 }   
 
 `
@@ -188,6 +276,8 @@ align-items:center;
 export const CarusellaWrapper = styled.div`
 width:100%;
 background:white;
+// height:100px;
+// min-height:150px;
 `
 
 export const StyledGalleryContainer = styled.div`
@@ -201,3 +291,5 @@ width:100%;
 height:100%;
 
 `
+
+
