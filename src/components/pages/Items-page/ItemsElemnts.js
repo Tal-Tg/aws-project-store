@@ -81,33 +81,33 @@ grid-gap: 20px;
 @media screen and (max-width: 667px) {
     grid-template-columns: 100% 240px;
     width:95%;
-    overflow-X: scroll;
+    // overflow-X: scroll;
 }   
 
 @media screen and (max-width: 400px) {
     grid-template-columns: 100% 240px;
     width:95%;
-    overflow-X: scroll;
+    // overflow-X: scroll;
 }   
 
 @media screen and (max-width: 370px) {
     grid-template-columns: 100% 240px;
     width:95%;
-    overflow-X: scroll;
+    // overflow-X: scroll;
 }  
 
 
 @media screen and (max-width: 330px) {
     grid-template-columns: 100% 240px;
     width:95%;
-    overflow-X: scroll;
+    // overflow-X: scroll;
 }  
 
 
 @media screen and (max-width: 300px) {
     grid-template-columns: 100% 240px;
     width:95%;
-    overflow-X: scroll;
+    // overflow-X: scroll;
 }  
 
 // @media screen and (max-width: 500px) {
@@ -239,7 +239,7 @@ grid-gap: 10px;
 
 
 export const ItemsMenuFilter = styled.div`
-width:100%;
+// width:100%;
 overflow-Y: scroll;
 min-height:100vh;
 max-height:150vh;
@@ -249,6 +249,14 @@ height:auto;
 grid-gap: 0px;
 position:relative;
 background:white;
+// float:right;
+right:15px;
+
+
+@media screen and (max-width: 667px) {
+    display:none;
+}   
+
 
 
 `
@@ -511,6 +519,11 @@ justify-content:center;
 text-align:center;
 display:flex;
 
+@media screen and (max-width: 780px) {
+    display:none;
+}   
+
+
 `
 
 export const PageLingWrapper = styled.div`
@@ -528,6 +541,15 @@ grid-gap: 10px;
 
 `
 
+export const Test = styled(Link)`
+color:#767676;
+&:hover{
+    text-decoration:underline;
+    cursor:pointer;
+    color:black;
+}
+` 
+
 export const LinkItemDiv = styled.div`
 width:100%;
 height:100%;
@@ -538,6 +560,7 @@ font-family: Cairo,Arial,Helvetica,sans-serif!important;
 &:hover{
     text-decoration:underline;
     cursor:pointer;
+    color:black;
 }
 
 `

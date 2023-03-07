@@ -9,6 +9,8 @@ import SignUp from "../pages/sign-up";
 import ItemGrid from "../pages/Items-page";
 import AccountMenu from "../pages/parts-page/menu-down";
 import SpecificItem from "../pages/Specific-Item-Page";
+import PhoneMenu from "../pages/phone-menu";
+import ShopPage from "../pages/shop-page";
 
 
 function Routing(){
@@ -20,10 +22,15 @@ function Routing(){
                     <Route  path="/Logout" element={ <Logout /> } ></Route>
                     <Route  path="/password_reset" element={ <ResetPassword /> } ></Route>
                     <Route  path="/sign_up" element={ <SignUp /> } ></Route>
+                    <Route  path="/Item-page/Shop" element={ <ShopPage /> } ></Route>
                     <Route  path="/Item-page/:title" element={ <ItemGrid /> } ></Route>
+                    {/* <Route  path="/d" element={ <PhoneMenu /> } ></Route> */}
                     {/* <Route  path="/Item-page/:title/staus%uservarification-Ytdjpawiew-dasfdsfds-gfdgdf@@!!2eoplkhgn/:id" element={ <SpecificItem /> } ></Route> */}
                     <Route  path="/Item-page/:title/:id" element={ <SpecificItem /> } ></Route>
-                    <Route  path="/laskjdflkshfjksdnf" element={ <AccountMenu /> } ></Route>
+                    {/* <Route  path="/" element={ <PhoneMenu /> } ></Route> */}
+                    {/* <Route  path="/laskjdflkshfjksdnf" element={ <AccountMenu /> } ></Route> */}
+                    {/* <Route  path="/phonemeny" element={ <PhoneMenu /> } ></Route> */}
+                    {/* <Route  path="/phonemeny" element={ <PhoneMenu /> } ></Route> */}
                     {/*<Route  path="/otherUser/:otherUserId" element={ <OtherUserPager /> } ></Route>
                     <Route  path="/Logout" element={ <Logout /> } ></Route> */}
             </Routes>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, useNavigate } from "react-router-dom";
 import store from "../../../Redux/store";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
@@ -15,6 +15,8 @@ import BEACHWEARimg from './BEACHWEARimg.jpg'
 import DENIMimg from './DENIMimg.jpg'
 import shoesimg from './shoesimg.jpg'
 import bagsimg from './bagsimg.jpg'
+import PhoneMenu from "../phone-menu";
+
 
 
 var lla = false;
@@ -25,12 +27,13 @@ var lla = false;
 export function setTest(test:any) {
     lla = test;
     console.log("tal " +lla);
-    
 }
 
-function MainPage(){
 
-    
+
+
+
+function MainPage(){
 
     const [checkUrl, setCheckUrl] = useState(false);
 
@@ -59,6 +62,10 @@ function MainPage(){
     useEffect(()=>{
         checkUrlFunction();
     })
+
+
+
+
 
     return(
         <div>
@@ -212,8 +219,10 @@ function MainPage(){
             </MenuWrapperReverse>:""}
             <BrowserRouter>
                 <Routing/>
+                <PhoneMenu />
             </BrowserRouter>
             {checkUrl ? "" :<Footer/>}
+            
         </div>
     )
 }

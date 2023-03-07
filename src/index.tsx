@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Route } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
 import MainPage from './components/pages/main-page';
 import './index.css';
 

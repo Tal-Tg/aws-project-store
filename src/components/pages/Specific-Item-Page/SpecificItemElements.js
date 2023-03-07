@@ -130,10 +130,10 @@ margin-bottom:-100px;
 
 
 export const ItemWrapper = styled.div`
-width:90%;
+width:95%;
 display: grid;
 background:white;
-grid-template-columns: 40% 47% 55px;
+grid-template-columns: 40% 48% 55px;
 grid-gap:5px;
 text-align:center;
 // align-items:center;

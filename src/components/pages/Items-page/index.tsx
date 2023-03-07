@@ -6,7 +6,7 @@ import {ItemsContainer , DivForHeader, ItemsWrapper, ItemsMenuFilter,ItemsGridCo
     ItemMenuListOpen,ItemMenuStyleClose,ItemMenuStyleCloseText,ItemMenuStyleCloseIconDiv,ItemMenuStyleOpen,ItemMenuDivSeparate,
     ItemMenuDivContainerList,ItemMenuDivLIList,ItemMenuListOpenItemDiv,ItemMenuListOpenItemDivText,ItemMenuListOpenItemDivIcon,
     ItemMenuListOpenItemDivInput,SubItemOpenDiv3Items,SubItemOpenDiv4Items,SubItemsOpenDivSize,SubItemsOpenDivSizeItem,SubItemsOpenDivColorItem,SubItemsOpenDivColor,
-    SubItemsOpenDivColorItemImg,SebShowMoreDiv,DivForSomethingWrapper,DivForSomethingH1} from './ItemsElemnts'
+    SubItemsOpenDivColorItemImg,SebShowMoreDiv,DivForSomethingWrapper,DivForSomethingH1,Test} from './ItemsElemnts'
 import {AiOutlinePlus} from 'react-icons/ai';
 import {AiOutlineMinus} from 'react-icons/ai';
 import PriceRange from "../parts-page/price-range-item";
@@ -134,9 +134,9 @@ const ItemGrid: React.FC = (): JSX.Element => {
             <DivForHeader></DivForHeader>
             <PageLinkContainer>
                 <PageLingWrapper>
-                    <LinkItemDiv><Link style={{"textDecoration":"none","color":"#767676"}} to="/Item-page/Dresses"> {param.title} </Link></LinkItemDiv>
+                    <LinkItemDiv><Test style={{"textDecoration":"none"}} to="/Item-page/Dresses"> {param.title} </Test></LinkItemDiv>
                         <SplitLineLinks>/</SplitLineLinks>
-                    <LinkItemDiv><Link style={{"textDecoration":"none","color":"#767676"}} to="/">Home-page</Link></LinkItemDiv>
+                    <LinkItemDiv><Test style={{"textDecoration":"none"}} to="/">Home-page</Test></LinkItemDiv>
                 </PageLingWrapper>
             </PageLinkContainer>
 

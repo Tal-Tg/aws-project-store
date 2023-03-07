@@ -89,7 +89,7 @@ function SpecificItem(){
             <DivForHeader>
 
             </DivForHeader>
-            <PageLinkContainer>     
+            {/* <PageLinkContainer>     
                 <PageLingWrapper>
                     <LinkItemDiv><Link style={{"textDecoration":"none","color":"#767676"}} to=""> specific item </Link></LinkItemDiv>
                         <SplitLineLinks>/</SplitLineLinks>
@@ -97,7 +97,7 @@ function SpecificItem(){
                         <SplitLineLinks>/</SplitLineLinks>
                     <LinkItemDiv><Link style={{"textDecoration":"none","color":"#767676"}} to="/">Home-page</Link></LinkItemDiv>
                 </PageLingWrapper>
-            </PageLinkContainer>
+            </PageLinkContainer> */}
 
 
             <DivForSomething>

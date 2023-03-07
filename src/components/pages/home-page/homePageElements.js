@@ -156,6 +156,7 @@ height:30px;
 position:relative;
 right:5px;
 
+
 `
 
 export const ImageTestForGridKnitwear = styled.img`

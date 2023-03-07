@@ -28,9 +28,13 @@ import CarouselOwnMade from "../CarusellaOwnMade";
 import HomePageItemsGrid from "./home-page-grid-items";
 
 
+
 function HomePage(){
-    
     const navigate = useNavigate();
+    
+
+
+
 
     // const clothestItemsList = [
     //     {
@@ -168,6 +172,7 @@ function HomePage(){
                     <br />
                 </HomePageWrapper>
             </HomePageContainer>
+            
             <br />
             <br />
         </div>

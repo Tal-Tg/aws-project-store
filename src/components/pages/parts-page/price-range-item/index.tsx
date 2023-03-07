@@ -24,7 +24,7 @@ const PriceRange = () => {
       {/* <input id="range-slider" style={{"direction":"rtl","fontWeight":"bold"}}>
         
       </input> */}
-      <h5 style={{"direction":"rtl"}}> טווח מחירים (ILS)</h5>
+      <h5 style={{"direction":"rtl","fontSize":"16px"}}> טווח מחירים (ILS)</h5>
      
       <br />
       <Slider
@@ -32,7 +32,7 @@ const PriceRange = () => {
         onChange={rangeSelector}
         valueLabelDisplay="auto"
         style={{width:"87%","position":"relative","left":"16px","color":"#142d4c"}}
-        min={0}
+        min={20}
         max={364}
         aria-labelledby="range-slider"
         

@@ -46,12 +46,12 @@ cursor:pointer;
 font-family: Cairo,Arial,Helvetica,sans-serif;
 
 @media only screen and (max-width: 540px) {
-    font-size:20px;
+    font-size:22px;
     top:10px;
 }
 
 @media only screen and (max-width: 380px) {
-    font-size:16px;
+    font-size:22px;
     top:12px;
 }
 
